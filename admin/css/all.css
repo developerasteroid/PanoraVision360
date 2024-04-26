@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.admin-header nav {
+    background-color: #110726;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.admin-header h3 {
+    font-size: 22px;
+}
+.admin-header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    /* align-items: center; */
+}
+
+.side-navigation-container {
+    background-color: #110726;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: calc(100vh - 67px);
+    padding: 20px 10px;
+}
+.side-navigation-container a {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px 0;
+    text-decoration: none;
+}
+.side-navigation-container a div {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.side-navigation-container a.active div {
+    background-color: #dbdbdb;
+    color: #000000;
+}
+
+.side-navigation-container a:hover {
+    color: #D9AF8B;
+}
+
+.add-new-image-form-container, .images-list-container {
+    width: 100%;
+}
+.add-new-image-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+.add-new-image-form label {
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.add-new-image-form input[type="text"] {
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.add-new-image-form textarea {
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.add-new-image-form input[type="file"] {
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.add-new-image-form input[type="submit"] {
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: #3399CC;
+    color: white;
+    border: none;
+    font-weight: 600;
+    border-radius: 14px;
+    width: 80%;
+    align-self: center;
+    margin-top: 30px;
+}
+
+
+
+.images-list-card img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.images-list-card {
+    background-color: #fff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.618);
+    margin: auto;
+    margin-top: 30px;
+    width: 75%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.images-list-card .information-container {
+    align-self: flex-start;
+    
+}
+.images-list-card .information-container h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.images-list-card .action-container {
+    display: flex;
+    gap: 10px;
+}
+.images-list-card .information-container p {
+    margin: 8px 0;
+}
+.update-image-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px #00000088;
+}
+
+.update-image-form h1 {
+    text-align: center;
+}
+
+.update-image-form label {
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.update-image-form input[type="text"], input[type="number"] {
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.update-image-form textarea {
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.update-image-form input[type="file"] {
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.update-image-form input[type="submit"] {
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: #3399CC;
+    color: white;
+    border: none;
+    font-weight: 600;
+    border-radius: 14px;
+    width: 80%;
+    align-self: center;
+    margin-top: 30px;
+}
