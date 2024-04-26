@@ -8,4 +8,3 @@ function panoramaView(path){
     });
 }
 
-panoramaView('./images/image7.jpg');

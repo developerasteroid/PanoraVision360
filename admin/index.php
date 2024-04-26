@@ -19,8 +19,17 @@
     
     <?php
     include('./includes/header.php');
-    include('./includes/sideNav.php');
     ?>
+
+    <div class="main-container">
+        <?php
+        include('./includes/sideNav.php');
+        ?>
+        <div class="index-component-container">
+            
+        </div>
+
+    </div>
 
     
 </body>

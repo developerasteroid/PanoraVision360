@@ -50,11 +50,13 @@
                     echo '<p>' . $row['description'] . '</p>';
                     if($row['position'] != null){
                         echo '<p>Position: ' . $row['position'] . '</p>';
+                    } else {
+                        echo '<p>Position: Default</p>';
                     }
                     echo '</div>';
                     echo '<div class="action-container">';
-                    echo '<a href="updateImage.php?id=' . $row['id'] . '">Update</a>';
-                    echo '<a href="deleteImage.php?id=' . $row['id'] . '" onclick="return confirmDelete()">Delete</a>';
+                    echo '<a class="action-update" href="updateImage.php?id=' . $row['id'] . '">Update</a>';
+                    echo '<a class="action-delete" href="deleteImage.php?id=' . $row['id'] . '" onclick="return confirmDelete()">Delete</a>';
                     echo '</div>';
                     echo '</div>';
                 }
