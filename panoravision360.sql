@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2024 at 11:34 AM
+-- Generation Time: Apr 27, 2024 at 04:55 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -64,12 +64,10 @@ INSERT INTO `images` (`id`, `name`, `description`, `image`, `position`, `updated
 (5, 'Food', 'big food pack   \r\n', 'IMG-662b8ccf7d1525.36755019.jpg', 1, '2024-04-26 11:53:50'),
 (6, 'Hall', 'big', 'IMG-662b8a8246f696.53329412.webp', 1, '2024-04-26 17:36:33'),
 (7, 'class', 'goo clas', 'IMG-662b8a9613d3f8.68454452.jpg', NULL, '2024-04-26 11:54:52'),
-(8, 'Library', 'libraryyyyy', 'IMG-662b8fbc9c8aa2.79732280.jpg', 2, '2024-04-26 12:18:17'),
+(8, 'Library', 'libraryyyyy', 'IMG-662b8fbc9c8aa2.79732280.jpg', 1, '2024-04-27 09:36:44'),
 (9, 'office', 'offi', 'IMG-662b901e083646.80158596.jpg', NULL, '2024-04-26 11:29:34'),
-(10, 'last', 'dsadg', 'IMG-662b9b5261d1f4.22872391.jpeg', 2, '2024-04-26 12:18:08'),
-(11, 'my', 'fdds', 'IMG-662bf46c046997.64788002.jpg', 1, '2024-04-26 18:37:42'),
-(12, 'asd', 'asd', 'IMG-662cbd0eea8159.02589965.jpg', 1, '2024-04-27 08:53:47'),
-(13, 'asdfg', 'dfg', 'IMG-662cbe5ca53e99.41439267.jpg', 1, '2024-04-27 08:59:19');
+(11, 'my', 'fdds ', 'IMG-662bf46c046997.64788002.jpg', 1, '2024-04-27 14:53:09'),
+(12, 'asd', 'asd', 'IMG-662cbd0eea8159.02589965.jpg', 2, '2024-04-27 09:36:26');
 
 -- --------------------------------------------------------
 
@@ -128,7 +126,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `user`
