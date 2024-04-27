@@ -37,7 +37,8 @@
             if(file_exists('../images/'.$file_name)){
                 unlink('../images/'.$file_name);
             }
-            echo "Record deleted Successfully";
+            header("Location: manageImages.php");
+            exit();
         } else {
             echo "No record Found with id: " . $_GET['id'];
         }
