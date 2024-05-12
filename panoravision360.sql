@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2024 at 04:55 PM
+-- Generation Time: May 12, 2024 at 01:38 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -61,13 +61,9 @@ CREATE TABLE `images` (
 --
 
 INSERT INTO `images` (`id`, `name`, `description`, `image`, `position`, `updatedAt`) VALUES
-(5, 'Food', 'big food pack   \r\n', 'IMG-662b8ccf7d1525.36755019.jpg', 1, '2024-04-26 11:53:50'),
-(6, 'Hall', 'big', 'IMG-662b8a8246f696.53329412.webp', 1, '2024-04-26 17:36:33'),
-(7, 'class', 'goo clas', 'IMG-662b8a9613d3f8.68454452.jpg', NULL, '2024-04-26 11:54:52'),
-(8, 'Library', 'libraryyyyy', 'IMG-662b8fbc9c8aa2.79732280.jpg', 1, '2024-04-27 09:36:44'),
-(9, 'office', 'offi', 'IMG-662b901e083646.80158596.jpg', NULL, '2024-04-26 11:29:34'),
-(11, 'my', 'fdds ', 'IMG-662bf46c046997.64788002.jpg', 1, '2024-04-27 14:53:09'),
-(12, 'asd', 'asd', 'IMG-662cbd0eea8159.02589965.jpg', 2, '2024-04-27 09:36:26');
+(15, 'manson', 'manson.........', 'IMG-664071316a1aa1.86260965.jpg', NULL, '2024-05-12 08:59:28'),
+(16, 'Vitacura', 'Vitacura....', 'IMG-6640a656748a30.77979571.jpg', NULL, '2024-05-12 11:21:58'),
+(17, 'Hotel Paranal', 'Hotel....', 'IMG-6640a739d7e3a7.91088532.jpg', NULL, '2024-05-12 11:25:45');
 
 -- --------------------------------------------------------
 
@@ -87,8 +83,18 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `password`) VALUES
-(1, 'suman', 'suman@gmail.com', '$2y$10$gyuM8uug32py0IeH1uJ0eetXSM4PqPnY.b3TvCaqYVO1NtPufgqpa'),
-(2, 'ashwith', 'ashwith@gmail.com', '$2y$10$9LRegpbyIKwxvsK0tQnHhO0R50jE7NUn.dApeZu2kqQ0q/FvKRNK.');
+(6, 'user', 'user@gmail.com', 'qwerty123'),
+(12, 'user1', 'user1@gmail.com', 'qwerty123'),
+(13, 'user2', 'user2@gmail.com', 'user@123'),
+(14, 'user3', 'user3@gmail.com', 'user@123'),
+(15, 'user4', 'user4@gmail.com', 'user@123'),
+(16, 'user5', 'user5@gmail.com', 'user@123'),
+(17, 'user6', 'user6@gmail.com', 'user@123'),
+(18, 'user7', 'user7@gmail.com', 'user@123'),
+(19, 'user8', 'user8@gmail.com', 'user@123'),
+(20, 'user9', 'user9@gmail.com', 'user@123'),
+(21, 'user10', 'user10@gmail.com', 'user@123'),
+(22, 'user11', 'user11@gmail.com', 'user@123');
 
 --
 -- Indexes for dumped tables
@@ -126,13 +132,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
