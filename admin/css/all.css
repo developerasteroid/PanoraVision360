@@ -61,7 +61,7 @@ body {
     color: #D9AF8B;
 }
 
-.add-new-image-form-container, .images-list-container, .index-component-container {
+.add-new-image-form-container, .images-list-container, .index-component-container, .manage-users-container {
     width: 100%;
 }
 .add-new-image-form {
@@ -212,4 +212,83 @@ body {
     margin-top: 30px;
 }
 
+.emptyListMsgDiv {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+.emptyListMsgDiv p {
+    margin: 20px;
+}
+.emptyListMsgDiv a {
+    text-decoration: none;
+    color: white;
+    background-color: #007ebd;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
 
+.mu-user-navigation-container {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+.mu-page-no-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 4px;
+}
+.mu-page-no-container a {
+    text-decoration: none;
+    background-color: rgb(84, 84, 84);
+    color: white;
+    padding: 3px 5px;
+    border-radius: 7px;
+}
+.mu-page-no-container a:hover {
+    background-color: #007ebd;
+}
+.mu-page-no-container a.activePage {
+    background-color: #007ebd;
+}
+.mu-search-user-container input {
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid rgb(81, 81, 81);
+    width: 200px;
+    padding: 2px 10px;
+    background-color: rgb(216, 216, 216);
+}
+.mu-search-user-container button {
+    padding: 4px 10px;
+    background-color: #007ebd;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+.mu-user-list-table-container table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+}
+.mu-user-list-table-container table td, th {
+    text-align: center;
+    border: 2px solid rgb(105, 105, 105);
+    padding: 5px;
+}
+.mu-user-list-table-container table .deleteUserBtn {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 7px;
+    margin: 5px;
+    display: inline-block;
+}

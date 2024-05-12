@@ -8,3 +8,16 @@ function panoramaView(path){
     });
 }
 
+
+function handleResize() {
+    // Get the height of the div element
+    let headerHeight = document.getElementById('nav-header-container').offsetHeight;
+    let screenHeight =  window.innerHeight;
+    document.getElementById('panorama').style.height = (screenHeight - headerHeight) + "px";
+}
+
+// Add an event listener for the resize event
+window.addEventListener('resize', handleResize);
+
+// Call the handleResize function initially to get the height on page load
+handleResize();

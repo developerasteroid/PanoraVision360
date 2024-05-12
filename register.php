@@ -27,7 +27,6 @@ if (isset($_POST['submit']) && isset($_POST['name']) && isset($_POST['email']) &
         } else {
             $sql = "INSERT INTO user (name, email, password) VALUES (?, ?, ?)";
             $stmt = mysqli_prepare($conn, $sql);
-            $hashed_password = password_hash($password, PASSWORD_DEFAULT);
             mysqli_stmt_bind_param($stmt, "sss", $name, $email, $password);
             if (mysqli_stmt_execute($stmt)) {
                 echo "<script>alert('Registered Successfully')</script>";
